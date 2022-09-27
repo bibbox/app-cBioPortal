@@ -1,0 +1,75 @@
+version: '3'
+
+networks:
+    bibbox-default-network:
+      external: true
+
+services:
+  §§INSTANCE-cbioportal:
+    restart: unless-stopped
+    image: cbioportal/cbioportal:4.1.13
+    container_name: §§INSTANCE-cbioportal-container
+    environment:
+      SHOW_DEBUG_INFO: "true"
+    ports:
+      - "8080:8080"
+    volumes:
+     - ./data/cbioportal/study:/study/
+     - ./data/cbioportal/config/portal.properties:/cbioportal/portal.properties:ro
+    depends_on:
+     - §§INSTANCE-cbioportal-database
+     - §§INSTANCE-cbioportal-session
+    links:
+      - §§INSTANCE-cbioportal-session:cbioportal-session
+      - §§INSTANCE-cbioportal-database:cbioportal-database
+    networks:
+      - bibbox-default-network
+    command: /bin/sh -c "(printf '' >> /tmp/cbioportal.log && tail -f /tmp/cbioportal.log | sed '/Completed initialization/ q' && metaImport.py -u http://localhost:8080 -s study/lgg_ucsf_2014/ -o) & java -Xms2g -Xmx4g -Dauthenticate=noauthsessionservice -Dsession.service.url=http://cbioportal-session:5000/api/sessions/my_portal/ -jar webapp-runner.jar -AmaxHttpHeaderSize=16384 -AconnectionTimeout=20000 --enable-compression /cbioportal-webapp" 
+    proxy:
+     TYPE: PRIMARY
+     URLPREFIX: §§INSTANCE
+     TEMPLATE: default
+     DISPLAYNAME: 'CBioPortal'  
+     PATH_TO_SOCKET: '/'
+     
+  §§INSTANCE-cbioportal-database:
+    restart: unless-stopped
+    image: mysql:5.7
+    container_name: §§INSTANCE-cbioportal-database-container
+    environment:
+      MYSQL_DATABASE: cbioportal
+      MYSQL_USER: cbio_user
+      MYSQL_PASSWORD: somepassword
+      MYSQL_ROOT_PASSWORD: somepassword
+    volumes:
+     - ./data/cgds.sql:/docker-entrypoint-initdb.d/cgds.sql:ro
+     - ./data/seed.sql.gz:/docker-entrypoint-initdb.d/seed.sql.gz:ro
+     - ./data/cbioportal_mysql_data:/var/lib/mysql
+    networks:
+      - bibbox-default-network
+  §§INSTANCE-cbioportal-session:
+    restart: unless-stopped
+    image: cbioportal/session-service:0.5.0
+    container_name: §§INSTANCE-cbioportal-session-container
+    links:
+      - §§INSTANCE-cbioportal-session-database:cbioportal-session-database
+    environment:
+      SERVER_PORT: 5000
+      JAVA_OPTS: -Dspring.data.mongodb.uri=mongodb://cbioportal-session-database:27017/session-service
+    depends_on:
+      - §§INSTANCE-cbioportal-session-database
+    networks:
+      - bibbox-default-network
+  §§INSTANCE-cbioportal-session-database:
+    restart: unless-stopped
+    image: mongo:3.7.9
+    container_name: §§INSTANCE-cbioportal-session-database-container
+    environment:
+      MONGO_INITDB_DATABASE: session_service
+    volumes:
+      - ./data/cbioportal_mongo_data:/data/db
+    networks:
+      - bibbox-default-network
+
+
+
