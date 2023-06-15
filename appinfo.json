@@ -1,7 +1,7 @@
 {
-	"name": "cBioPortal v4.1.13",
+	"name": "cBioPortal v5.3.11",
 	"short_name": "cBioPortal",
-	"version": "v4.1.13",
+	"version": "v5.3.11",
 	"description": "Open Cravat is a tool for vraiant annotations with a nice web interface.",
 	"catalogue_url": "",
 	"application_url": "https://www.cbioportal.org/",
