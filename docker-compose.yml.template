@@ -62,7 +62,7 @@ services:
       - bibbox-default-network
   §§INSTANCE-cbioportal-session-database:
     restart: unless-stopped
-    image: mongo:3.7.9
+    image: mongo:4.2
     container_name: §§INSTANCE-cbioportal-session-database-container
     environment:
       MONGO_INITDB_DATABASE: session_service
