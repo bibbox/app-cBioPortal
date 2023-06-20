@@ -4,7 +4,7 @@
 	"version": "v4.1.13",
 	"description": "Open Cravat is a tool for vraiant annotations with a nice web interface.",
 	"catalogue_url": "",
-	"application_url": "https://opencravat.org/",
+	"application_url": "https://www.cbioportal.org/",
 	"tags": ["Bioinformatics", "Analysis","varaiants","genetics"],
-	"application_documentation_url": "https://open-cravat.readthedocs.io/en/latest/"
+	"application_documentation_url": "https://docs.cbioportal.org/"
 }
