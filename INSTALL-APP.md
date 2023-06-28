@@ -1,4 +1,4 @@
-## Open Cravat Installation Instructions 
+## cBioPortal Installation Instructions 
 
 ### cBioPortal
 
