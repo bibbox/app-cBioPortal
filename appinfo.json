@@ -2,7 +2,7 @@
 	"name": "cBioPortal v5.3.8",
 	"short_name": "cBioPortal",
 	"version": "v5.3.8",
-	"description": "Open Cravat is a tool for vraiant annotations with a nice web interface.",
+	"description": "cBioPortal: A Web Platform of Gene-Based Data Exploration",
 	"catalogue_url": "",
 	"application_url": "https://www.cbioportal.org/",
 	"tags": ["Bioinformatics", "Analysis","varaiants","genetics"],
