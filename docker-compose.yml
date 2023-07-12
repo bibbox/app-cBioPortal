@@ -7,7 +7,7 @@ networks:
 services:
   bibbox-cbioportal:
     restart: unless-stopped
-    image: cbioportal/cbioportal:4.1.13
+    image: cbioportal/cbioportal:5.3.8
     container_name: bibbox-cbioportal-container
     environment:
       SHOW_DEBUG_INFO: "true"
@@ -42,7 +42,7 @@ services:
       - bibbox-default-network
   bibbox-cbioportal-session:
     restart: unless-stopped
-    image: cbioportal/session-service:0.5.0
+    image: cbioportal/session-service:0.6.1
     container_name: bibbox-cbioportal-session-container
     links:
       - bibbox-cbioportal-session-database:cbioportal-session-database
@@ -55,7 +55,7 @@ services:
       - bibbox-default-network
   bibbox-cbioportal-session-database:
     restart: unless-stopped
-    image: mongo:3.7.9
+    image: mongo:4.2
     container_name: bibbox-cbioportal-session-database-container
     environment:
       MONGO_INITDB_DATABASE: session_service
