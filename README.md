@@ -39,13 +39,16 @@ The default values for the standalone installation are:
 
   
 ## Mounted Volumes
-### cbioportal/cbioportal Conatiner
+### cbioportal/cbioportal Container
   - *./data/cbioportal/study:/study/*
   - *./data/cbioportal/config/portal.properties:/cbioportal/portal.properties:ro*
-### mysql Conatiner
+### mysql Container
   - *./data/cgds.sql:/docker-entrypoint-initdb.d/cgds.sql:ro*
   - *./data/seed.sql.gz:/docker-entrypoint-initdb.d/seed.sql.gz:ro*
   - *./data/cbioportal_mysql_data:/var/lib/mysql*
-### mongo Conatiner
+### mongo Container
   - *./data/cbioportal_mongo_data:/data/db*
 
+## Hints
+* approx. time with medium fast internet connection: **15 minutes**
+* import your data see steps in [instructions](INSTALL-APP.md)
