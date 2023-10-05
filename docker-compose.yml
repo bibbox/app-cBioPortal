@@ -8,6 +8,7 @@ services:
   bibbox-cbioportal:
     restart: unless-stopped
     image: cbioportal/cbioportal:5.3.8
+    platform: linux/amd64
     container_name: bibbox-cbioportal-container
     environment:
       SHOW_DEBUG_INFO: "true"
