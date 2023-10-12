@@ -7,5 +7,6 @@
 	"application_url": "https://www.cbioportal.org/",
 	"tags": ["Bioinformatics", "Analysis","varaiants","genetics"],
 	"application_documentation_url": "https://docs.cbioportal.org/",
-	"instance_information": "work in progress"
+	
+	"instance_information": " <p>The cBioPortal for Cancer Genomics is an open-access, open-source resource for interactive exploration of multidimensional cancer genomics data sets. The goal of cBioPortal is to significantly lower the barriers between complex genomic data and cancer researchers by providing rapid, intuitive, and high-quality access to molecular profiles and clinical attributes from large-scale cancer genomics projects</p> "
 }
