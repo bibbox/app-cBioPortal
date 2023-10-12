@@ -7,5 +7,5 @@
 	"application_url": "https://www.cbioportal.org/",
 	"tags": ["Bioinformatics", "Analysis","varaiants","genetics"],
 	"application_documentation_url": "https://docs.cbioportal.org/",
-	"instance_information": "work in progress"
+	"instance_information": "<p>work in progress</p>"
 }
