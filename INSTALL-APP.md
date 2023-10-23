@@ -4,7 +4,7 @@ The application can be installed either within the BIBBOX environment or as a st
 
 ## Installation within in the BIBBOX
 
-Once you've selected the desired app for your BIBBOX instance, you can choose from the available versions, as shown in the following figure.
+Once you've selected the desired App for your BIBBOX instance, you can choose from the available versions, as shown in the following figure.
 
 [Insert Figure]
 
@@ -12,7 +12,7 @@ Clicking "Install" will open a new window, as illustrated in the following figur
 
 [Insert Figure]
 
-After confirming by clicking "Install," the app will be installed as a BIBBOX instance. Once the installation is complete, you only need to follow a few steps to use the app for the first time, which are described below.
+After confirming by clicking "Install," the App will be installed as a BIBBOX instance. Once the installation is complete, you only need to follow a few steps to use the App for the first time, which are described below.
 
 ## Setup after BIBBOX or stand-alone installation
 
