@@ -8,7 +8,7 @@ Once you've selected the desired App for your BIBBOX instance, you can choose fr
 
 ![Screenshot01](assets/cBio_install1.png)
 
-Clicking "Install" will open a new window, as illustrated in the following figure. Here, you can define the necessary entries. Some fields come pre-filled with suggested options, and if left unchanged, these default values will be used as the entries.
+Clicking "Install App" will open a new window, as illustrated in the following figure. Here, you can define the necessary entries. Some fields come pre-filled with suggested options, and if left unchanged, these default values will be used as the entries.
 
 ![Screenshot02](assets/cBio_install2.png)
 
