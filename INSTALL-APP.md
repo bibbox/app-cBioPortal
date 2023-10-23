@@ -1,20 +1,18 @@
 # cBioPortal Installation Instructions 
 
-Since the application can be installed within the BIBBOX or as stand-alone solution, you can find the install instructions within the BIBBOX, followed by the setup instructions, which will be needed after the application was successfully installed.
-
+The application can be installed either within the BIBBOX environment or as a stand-alone solution. Installation instructions can be found within the BIBBOX, followed by setup instructions required once the application has been successfully installed.
 
 ## Installation within in the BIBBOX
 
-After you have chosen the App, which you would like to use as BIBBOX instance, you can chose between the available versions, as it is shown in the following figure.
+Once you've selected the desired app for your BIBBOX instance, you can choose from the available versions, as shown in the following figure.
 
-figure xx
+[Insert Figure]
 
-With the click on install a new window appears. which is illustrated in fiugre yy. You can define required entries. Some fields are pre-filled with entries that are suggested as possible options. If these fields are not refilled, these default values will be adopted as the associated entry.
+Clicking "Install" will open a new window, as illustrated in the following figure. Here, you can define the necessary entries. Some fields come pre-filled with suggested options, and if left unchanged, these default values will be used as the entries.
 
-figure yy
+[Insert Figure]
 
-After confirming by clicking on install, the App will be installed as a BIBBOX instance.
-When the installation is complete, you only need a few steps to use the APP for the first time, which are described below.
+After confirming by clicking "Install," the app will be installed as a BIBBOX instance. Once the installation is complete, you only need to follow a few steps to use the app for the first time, which are described below.
 
 ## Setup after BIBBOX or stand-alone installation
 
