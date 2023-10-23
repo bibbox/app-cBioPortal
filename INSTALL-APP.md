@@ -6,11 +6,11 @@ The application can be installed either within the BIBBOX environment or as a st
 
 Once you've selected the desired App for your BIBBOX instance, you can choose from the available versions, as shown in the following figure.
 
-[Insert Figure]
+![Screenshot01](assets/cBio_install1.png)
 
 Clicking "Install" will open a new window, as illustrated in the following figure. Here, you can define the necessary entries. Some fields come pre-filled with suggested options, and if left unchanged, these default values will be used as the entries.
 
-[Insert Figure]
+![Screenshot02](assets/cBio_install2.png)
 
 After confirming by clicking "Install," the App will be installed as a BIBBOX instance. Once the installation is complete, you only need to follow a few steps to use the App for the first time, which are described below.
 
@@ -20,18 +20,18 @@ Be patient this can take a while.
 
 ### When you start this the first time only one demo dataset is loaded
 
-![Screenshot01](assets/install-screen-01.png)
+![Screenshot03](assets/install-screen-01.png)
 
 
 ### You can check the demo data set by selecting it an clicking on Explore Selected Studies
 
-![Screenshot02](assets/install-screen-02.png)
+![Screenshot04](assets/install-screen-02.png)
 
 
 #### Exploring Studies
 A overview summary is presented when studies are expolred
 
-![Screenshot03](assets/install-screen-03.png)
+![Screenshot05](assets/install-screen-03.png)
 
 ### Upload your own data
 
