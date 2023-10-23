@@ -20,7 +20,7 @@ When the installation is complete, you only need a few steps to use the APP for 
 
 Be patient this can take a while.
 
-### When you start this the first time only one demo data et is loaded
+### When you start this the first time only one demo dataset is loaded
 
 ![Screenshot01](assets/install-screen-01.png)
 
